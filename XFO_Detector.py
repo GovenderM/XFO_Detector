@@ -1,8 +1,8 @@
 # Tool 	        	: XFO_Detector.py
-# Author		: Mayendran Govender
-# Date Created          : 17 June 2014
-# Description		: This tool scans  your webserver and determines what directive you have set X-FRAME-OPTIONS. This will allow you to determine what settings you should decide on to prevent Click Jacking  
-# Usage                 : python XFO_Detector.py 
+# Author		      : Mayendran Govender
+# Date Created    : 17 June 2014
+# Description		: This tool scans  your webserver and determines what directive you have set for X-FRAME-OPTIONS. This will allow you to determine what settings you should decide on to prevent Click Jacking  
+# Usage           : python XFO_Detector.py 
 
 ###########Important Notice - Please test this Tool in a test platorm and understand how this tool works before using in a production platform. 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -25,7 +25,7 @@ with open("XFO_Detector.log","a+") as stdout: # The XFO_Detector.log file is the
 import datetime 
 f=open("XFO_Detector.log",'a')
 
-f.write ("This is your Setting for X-FRAME-OPTIONS, Please see link in script to determine what to set to prevent clickjacking"+'\t') # Appending info 
+f.write ("This is your Setting for X-FRAME-OPTIONS, Please see link in script to determine what to setting to use to prevent clickjacking"+'\t') # Appending info 
 
 f.write ('\n')
 f.write(datetime.datetime.now().ctime())
